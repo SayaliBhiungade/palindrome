@@ -1,0 +1,25 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+	long long int a,x,len=0,pal=0,b,c;
+	cout<<"enter no.";
+	cin>>a;b=a;c=a;
+	while(a!=0)
+	{
+		x=a%10;
+        a=a/10;
+        len++;
+        }cout<<"\n";
+        while(b!=0)
+        {x=b%10;
+        	
+        	pal=pal+x*pow(10,len--);
+        	b=b/10;
+        	}
+        	if (pal/10==c)
+        	cout<<"yes\n";
+        	else cout<<"no\n";
+        	return 0;
+        	}
